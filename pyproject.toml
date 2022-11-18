@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "fastapi-dynamodb"
+version = "0.1.0"
+description = ""
+authors = ["ajs-dockare <aatmjeet@dockare.io>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.72.0"
+pynamodb = "^5.2.0"
+uvicorn = "^0.17.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+black = "^21.12b0"
+isort = "^5.10.1"
+requests = "^2.27.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
